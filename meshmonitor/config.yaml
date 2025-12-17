@@ -1,0 +1,25 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration
+name: Meshmonitor
+version: "0.1.0"
+slug: meshmonitor
+description: Monitor and manage your mesh network from Home Assistant
+url: https://github.com/bhardie/ha-meshmonitor
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+startup: application
+boot: auto
+host_network: true
+ports:
+  8080/tcp: 8080
+ports_description:
+  8080/tcp: Web interface
+options:
+  log_level: info
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+image: ghcr.io/bhardie/ha-meshmonitor-{arch}

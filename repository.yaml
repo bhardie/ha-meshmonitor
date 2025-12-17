@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository
+name: Meshmonitor
+url: https://github.com/bhardie/ha-meshmonitor
+maintainer: Brian Hardie
