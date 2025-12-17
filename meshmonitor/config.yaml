@@ -19,9 +19,11 @@ ports:
 
 webui: "http://[HOST]:[PORT:3001]/"
 
-# Mount a writable host directory directly to /data
-devices:
-  - /data/addons/data/meshmonitor:/data:rw
+map:
+  - addon_config:rw
+
+environment:
+  DATA_DIR: "/config/meshmonitor"
 
 options:
   meshtastic_node_ip: "192.168.1.100"
