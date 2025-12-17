@@ -1,6 +1,6 @@
 name: "MeshMonitor"
 description: "Web-based monitoring for Meshtastic mesh networks"
-version: "0.1.2"
+version: "0.1.0"
 slug: "meshmonitor"
 arch:
   - aarch64
@@ -12,8 +12,7 @@ arch:
 startup: application
 boot: auto
 
-#2.17.0
-image: "ghcr.io/yeraze/meshmonitor:v2.17.0"
+image: "ghcr.io/yeraze/meshmonitor"
 
 ports:
   3001/tcp: 3001
