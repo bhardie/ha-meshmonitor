@@ -1,15 +1,11 @@
 #!/usr/bin/with-contenv bashio
 # shellcheck shell=bash
 
-# Read config
 MESHTASTIC_NODE_IP=$(bashio::config 'meshtastic_node_ip')
-PORT=$(bashio::config 'port')
-SSL=$(bashio::config 'ssl')
+PORT=$(bashio::config 'port' | xargs)  # e.g., 8080 from HA port mapping
 
-# Create data dir
 mkdir -p /data
 
-# Run MeshMonitor
 exec docker run \
   --rm \
   --name meshmonitor \
