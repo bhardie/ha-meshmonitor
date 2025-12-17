@@ -8,16 +8,19 @@ arch:
   - armhf
   - armv7
   - i386
+
 startup: application
 boot: auto
 
-# Expose container port 3001 to host 8987
-ports:
-  3001/tcp: 8987
+image: "ghcr.io/yeraze/meshmonitor:latest"
 
-webui: "http://[HOST]:[PORT:8987]/"
+ports:
+  3001/tcp: 3001
+
+webui: "http://[HOST]:[PORT:3001]/"
 
 options:
   meshtastic_node_ip: "192.168.1.100"
+
 schema:
   meshtastic_node_ip: str
