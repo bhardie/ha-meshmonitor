@@ -1,7 +1,5 @@
 # Home Assistant Add-on: Meshmonitor
 
-![Meshmonitor Logo](meshmonitor/logo.svg)
-
 ## About
 
 This repository contains a Home Assistant add-on for Meshmonitor, allowing you to monitor and manage your mesh network directly from Home Assistant.
