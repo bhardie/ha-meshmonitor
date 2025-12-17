@@ -19,6 +19,9 @@ ports:
 
 webui: "http://[HOST]:[PORT:3001]/"
 
+map:
+  - addon_data:rw
+
 options:
   meshtastic_node_ip: "192.168.1.100"
 
