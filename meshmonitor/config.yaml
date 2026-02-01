@@ -1,6 +1,6 @@
 name: "MeshMonitor"
 description: "Web-based monitoring for Meshtastic mesh networks"
-version: "0.0.7"
+version: "0.0.8"
 slug: "meshmonitor"
 arch:
   - aarch64
